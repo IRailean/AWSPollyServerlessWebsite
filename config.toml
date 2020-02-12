@@ -1,0 +1,21 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+defaultContentLanguage="en"
+title = "AWS Polly website"
+theme="hugo-theme-learn-master"
+defaultContentLanguageInSubdur = true
+
+[params]
+	description = "New website"
+	author = "Me"
+	showVisitedLinks = true
+[Languages]
+[Languages.en]
+title = "AWS Polly website"
+weight = 1
+languageName = "English"
+
+[Languages.fr]
+title = "AWS Polly website"
+weight = 2
+languageName = "Francais"
