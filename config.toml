@@ -1,9 +1,10 @@
-baseURL = "http://localhost:1313/"
+baseURL = "http://my-bucket-aws-polly.s3-website.eu-west-2.amazonaws.com"
 languageCode = "en-us"
 defaultContentLanguage="en"
 title = "AWS Polly website"
 theme="hugo-theme-learn-master"
 defaultContentLanguageInSubdur = true
+uglyurls = true
 
 [params]
 	description = "New website"
