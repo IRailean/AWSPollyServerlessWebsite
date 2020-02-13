@@ -10,8 +10,8 @@ s3    = boto3.client('s3')
 def lambda_handler(event, context):
     output = os.environ['output']
     supported_languages = os.environ['supported_languages'].split(',')
-    default_language = os.environ('default_language')
-    polly_bucket = os.environ('polly_bucket')
+    default_language = os.environ['default_language']
+    polly_bucket = os.environ['polly_bucket']
 
     s3_bucket = event['Records'][0]['s3']['bucket']['name']
     key = urllib.parse.unquote_plus(event['Records'][0]['s3']['object']['key'], encoding='utf-8')
@@ -45,3 +45,4 @@ def lambda_handler(event, context):
     except Exception as e:
         print('Error getting object {} from bucket {}. Make sure they exist and your bucket is in the same region as this function'.format(key, s3_bucket))
         raise e
+    
