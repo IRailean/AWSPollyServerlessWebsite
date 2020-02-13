@@ -10,6 +10,8 @@ uglyurls = true
 	description = "New website"
 	author = "Me"
 	showVisitedLinks = true
+	pollyMediaURL = "https://s3.eu-west-2.amazonaws.com/my-code-bucket-polly-output"
+	
 [Languages]
 [Languages.en]
 title = "AWS Polly website"
